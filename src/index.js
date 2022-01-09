@@ -9,8 +9,6 @@ $(document).ready(function() {
     let promise = CryptoService.getCrypto()
     promise.then(function(response) {
       const body = JSON.parse(response);
-      console.log(body);
-      console.log(body.bitcoin.usd);
       $("#bitcoin").text(`Bitcoin Price in USD:  ${body.bitcoin.usd}`);
       $("#ethereum").text(`Ethereum Price in USD:  ${body.ethereum.usd}`);
       $("#dogecoin").text(`Dogecoin Price in USD:  ${body.dogecoin.usd}`);
