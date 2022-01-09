@@ -1,0 +1,47 @@
+#crypto-display, #exchange-display {
+  /* display: none; */
+}
+
+#main-container {
+  max-width: 900px;
+  padding: auto, 0;
+}
+
+body {
+  margin-top: 15%;
+  background-color: rgb(88, 30, 224) ;
+}
+
+h1 {
+  font-family: 'Monoton', cursive;
+  background-color: rgb(88, 30, 224) ;
+  color: white;
+}
+
+#enter {
+  font-family: 'Roboto', sans-serif;
+  background-color: rgb(88, 30, 224) ;
+  color: white;
+}
+
+#crypto-display {
+  background-color: rgb(202, 225, 235);
+  border-radius: 10px;
+  padding: 15px 0px;
+  margin-top: 15px;
+}
+
+#trade-display {
+  font-family: 'Roboto', sans-serif;
+  background-color: rgb(88, 30, 224) ;
+  color: white;
+}
+
+.row {
+  text-align: center;
+  padding: 10px;
+}
+
+#drop1, #drop2 {
+  margin: 15%;
+}

@@ -1,30 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Roboto:wght@300&display=swap" rel="stylesheet">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 </head>
 <body>
-  <h1>Cryptocurrancy Converter</h1>
-  <button id="test">Click!</button>
-  <div id="crypto-display">
-    <ul>
-      <li id="bitcoin"></li>
-      <li id="ethereum"></li>
-      <li id="dogecoin"></li>
-      <li id="algorand"></li>
-      
+  <div class="container" id="main-container">
+    <div id="splash">
+      <div class="d-flex justify-content-center">
+        <h1 style="font-size:20vw">Loon</h1>
+      </div>
+      <div class="d-flex justify-content-center">
+        <button type="button" class="btn btn-link" id="enter">Check out our top pics for the week. To the Loon!</button>
+      </div>
+    </div>
+    <div class="container" id="crypto-display">  
+      <div class="row">
+        <div class="crypto-title col-2" id="bitcoin-title">Bitcoin</div>
+        <div class="crypto-price col-2" id="bitcoin-price"></div>
+        <div class="crypto-change col-2" id="bitcoin-change"></div>
+        <div class="crypto-volume col-3" id="bitcoin-volume"></div>
+        <div class="cypto-cap col-3" id="bitcoin-cap"></div>
+      </div>
+      <hr/>
+      <div class="row">
+        <div class="crypto-title col-2" id="ethereum-title">Ethereum</div>
+        <div class="crypto-price col-2" id="ethereum-price"></div>
+        <div class="crypto-change col-2" id="ethereum-change"></div>
+        <div class="crypto-volume col-3" id="ethereum-volume"></div>
+        <div class="cypto-cap col-3" id="ethereum-cap"></div>
+      </div>
+      <hr/>
+      <div class="row">
+        <div class="crypto-title col-2" id="dogecoin-title">Dogecoin</div>
+        <div class="crypto-price col-2" id="dogecoin-price"></div>
+        <div class="crypto-change col-2" id="dogecoin-change"></div>
+        <div class="crypto-volume col-3" id="dogecoin-volume"></div>
+        <div class="cypto-cap col-3" id="dogecoin-cap"></div>
+      </div>
+      <hr/>
+      <div class="row">
+        <div class="crypto-title col-2" id="algorand-title">Algorand</div>
+        <div class="crypto-price col-2" id="algorand-price"></div>
+        <div class="crypto-change col-2" id="algorand-change"></div>
+        <div class="crypto-volume col-3" id="algorand-volume"></div>
+        <div class="cypto-cap col-3" id="algorand-cap"></div>
+    </div>
+    <div id="trade-display">
+      <div class="row">
+        <div class="d-flex justify-content-center">
+          <h3>Choose which currencies you would like to trade. Loon offers zero fee trading!</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6">
+          <div class="btn-group">
+            <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="drop1">
+              Select Currency
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Bitcoin</a>
+              <a class="dropdown-item" href="#">Ethereum</a>
+              <a class="dropdown-item" href="#">Dogecoin</a>
+              <a class="dropdown-item" href="#">Algorand</a>
+            </div>
+            <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="drop2">
+              Select Currency
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Bitcoin</a>
+              <a class="dropdown-item" href="#">Ethereum</a>
+              <a class="dropdown-item" href="#">Dogecoin</a>
+              <a class="dropdown-item" href="#">Algorand</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="showError">
 
-  </div>
-  <div id="exchange-display">
+    </div>
 
-  </div>
-  <div id="showError">
-
-  </div>
-
-
+  </div>  
 </body>
 </html>
