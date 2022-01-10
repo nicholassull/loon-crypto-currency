@@ -4,9 +4,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/styles.css';
 import CryptoService from './crypto-service.js';
 
-
-
-
 $(document).ready(function() {
   $("#enter").click(function(){
     $("#crypto-display").show();
@@ -20,8 +17,6 @@ $(document).ready(function() {
     $("#crypto-display").show();
     $("#trade-display").hide();
   })
-
-
 
   $("#enter").click(function() {
     let promise = CryptoService.getCrypto()
@@ -53,13 +48,13 @@ $(document).ready(function() {
     }, function(error) {
       $("#showError").text(`Oops! There was the following error: ${error}`);
     });
-    $("#trade").click(function() {
-      $("#trade-display").show();
-      $("#crypto-display").hide();
-    })
-    $("#back").click(function() {
-      $("#crypto-display").show();
-      $("#trade-display").hide();
-    })
+    // $("#trade").click(function() {
+    //   $("#trade-display").show();
+    //   $("#crypto-display").hide();
+    // })
+    // $("#back").click(function() {
+    //   $("#crypto-display").show();
+    //   $("#trade-display").hide();
+    // })
   });
 });
