@@ -53,5 +53,13 @@ $(document).ready(function() {
     }, function(error) {
       $("#showError").text(`Oops! There was the following error: ${error}`);
     });
+    $("#trade").click(function() {
+      $("#trade-display").show();
+      $("#crypto-display").hide();
+    })
+    $("#back").click(function() {
+      $("#crypto-display").show();
+      $("#trade-display").hide();
+    })
   });
 });

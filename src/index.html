@@ -19,37 +19,51 @@
         <button type="button" class="btn btn-link" id="enter">Check out our top pics for the week. To the Loon!</button>
       </div>
     </div>
-    <div class="container" id="crypto-display">  
-      <div class="row">
-        <div class="crypto-title col-2" id="bitcoin-title">Bitcoin</div>
-        <div class="crypto-price col-2" id="bitcoin-price"></div>
-        <div class="crypto-change col-2" id="bitcoin-change"></div>
-        <div class="crypto-volume col-3" id="bitcoin-volume"></div>
-        <div class="cypto-cap col-3" id="bitcoin-cap"></div>
+    <div id="crypto-display">
+      <div class="container">
+        <div class="row" id="head-row">
+          <div class="header col-2">Currency</div>
+          <div class="header col-2">Price</div>
+          <div class="header col-2">Change</div>
+          <div class="header col-3">Volume (24H)</div>
+          <div class="header col-3">Market cap</div>
+        </div>
+        <hr/>  
+        <div class="row">
+          <div class="crypto-title col-2" id="bitcoin-title">Bitcoin</div>
+          <div class="crypto-price col-2" id="bitcoin-price"></div>
+          <div class="crypto-change col-2" id="bitcoin-change"></div>
+          <div class="crypto-volume col-3" id="bitcoin-volume"></div>
+          <div class="cypto-cap col-3" id="bitcoin-cap"></div>
+        </div>
+        <hr/>
+        <div class="row">
+          <div class="crypto-title col-2" id="ethereum-title">Ethereum</div>
+          <div class="crypto-price col-2" id="ethereum-price"></div>
+          <div class="crypto-change col-2" id="ethereum-change"></div>
+          <div class="crypto-volume col-3" id="ethereum-volume"></div>
+          <div class="cypto-cap col-3" id="ethereum-cap"></div>
+        </div>
+        <hr/>
+        <div class="row">
+          <div class="crypto-title col-2" id="dogecoin-title">Dogecoin</div>
+          <div class="crypto-price col-2" id="dogecoin-price"></div>
+          <div class="crypto-change col-2" id="dogecoin-change"></div>
+          <div class="crypto-volume col-3" id="dogecoin-volume"></div>
+          <div class="cypto-cap col-3" id="dogecoin-cap"></div>
+        </div>
+        <hr/>
+        <div class="row">
+          <div class="crypto-title col-2" id="algorand-title">Algorand</div>
+          <div class="crypto-price col-2" id="algorand-price"></div>
+          <div class="crypto-change col-2" id="algorand-change"></div>
+          <div class="crypto-volume col-3" id="algorand-volume"></div>
+          <div class="cypto-cap col-3" id="algorand-cap"></div>
+        </div>
+        <div class="row">
+          <button type="button" class="btn btn-secondary btn-lg" id="trade">Trade</button>
+        </div>
       </div>
-      <hr/>
-      <div class="row">
-        <div class="crypto-title col-2" id="ethereum-title">Ethereum</div>
-        <div class="crypto-price col-2" id="ethereum-price"></div>
-        <div class="crypto-change col-2" id="ethereum-change"></div>
-        <div class="crypto-volume col-3" id="ethereum-volume"></div>
-        <div class="cypto-cap col-3" id="ethereum-cap"></div>
-      </div>
-      <hr/>
-      <div class="row">
-        <div class="crypto-title col-2" id="dogecoin-title">Dogecoin</div>
-        <div class="crypto-price col-2" id="dogecoin-price"></div>
-        <div class="crypto-change col-2" id="dogecoin-change"></div>
-        <div class="crypto-volume col-3" id="dogecoin-volume"></div>
-        <div class="cypto-cap col-3" id="dogecoin-cap"></div>
-      </div>
-      <hr/>
-      <div class="row">
-        <div class="crypto-title col-2" id="algorand-title">Algorand</div>
-        <div class="crypto-price col-2" id="algorand-price"></div>
-        <div class="crypto-change col-2" id="algorand-change"></div>
-        <div class="crypto-volume col-3" id="algorand-volume"></div>
-        <div class="cypto-cap col-3" id="algorand-cap"></div>
     </div>
     <div id="trade-display">
       <div class="row">
@@ -59,26 +73,20 @@
       </div>
       <div class="row">
         <div class="col-6">
-          <div class="btn-group">
-            <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="drop1">
-              Select Currency
-            </button>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="#">Bitcoin</a>
-              <a class="dropdown-item" href="#">Ethereum</a>
-              <a class="dropdown-item" href="#">Dogecoin</a>
-              <a class="dropdown-item" href="#">Algorand</a>
-            </div>
-            <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="drop2">
-              Select Currency
-            </button>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="#">Bitcoin</a>
-              <a class="dropdown-item" href="#">Ethereum</a>
-              <a class="dropdown-item" href="#">Dogecoin</a>
-              <a class="dropdown-item" href="#">Algorand</a>
-            </div>
-          </div>
+          <select class="form-select" aria-label="Default select example">
+            <option selected>Select Currency</option>
+            <option value="1">Bitcoin</option>
+            <option value="2">Ethereum</option>
+            <option value="3">Dogecoin</option>
+            <option value="4">Algorand</option>
+          </select>
+          <select class="form-select" aria-label="Default select example">
+            <option selected>Select Currency</option>
+            <option value="1">Bitcoin</option>
+            <option value="2">Ethereum</option>
+            <option value="3">Dogecoin</option>
+            <option value="4">Algorand</option>
+          </select>
         </div>
       </div>
     </div>

@@ -1,5 +1,5 @@
-#crypto-display, #exchange-display {
-  /* display: none; */
+#crypto-display, #trade-display {
+  display: none;
 }
 
 #main-container {
@@ -40,6 +40,18 @@ h1 {
 .row {
   text-align: center;
   padding: 10px;
+}
+
+.crypto-title:hover {
+  font-size: 1.1em;
+  color: rgb(67, 94, 243);
+  cursor: pointer;
+}
+
+.header {
+  font-size: 1.1em;
+  font-weight: bold;
+  padding-bottom: 5px;
 }
 
 #drop1, #drop2 {
