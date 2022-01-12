@@ -8,18 +8,18 @@ $(document).ready(function() {
   $("#enter").click(function(){
     $("#crypto-display").show();
     $("#splash").hide();
-  })
+  });
   $("#trade").click(function() {
     $("#trade-display").show();
     $("#crypto-display").hide();
-  })
+  });
   $("#back").click(function() {
     $("#crypto-display").show();
     $("#trade-display").hide();
-  })
+  });
 
   $("#enter").click(function() {
-    let promise = CryptoService.getCrypto()
+    let promise = CryptoService.getCrypto();
     promise.then(function(response) {
       const body = JSON.parse(response);
       $("#bitcoin-price").text(`$${body.bitcoin.usd}`);
@@ -50,12 +50,13 @@ $(document).ready(function() {
     });
   });
   $("#exchange-btn").click(function() {
-    let promise = CryptoService.getCrypto()
-      .then(function(response) {
-        const body = JSON.parse(response);
+    CryptoService.findRate('2');
+    // let promise = CryptoService.getCrypto()
+    //   .then(function(response) {
+    //     const body = JSON.parse(response);
         
-        let crypto1 = $("")
-        CryptoService.exchange()
-      })
+    //     let crypto1 = $("")
+    //     CryptoService.exchange()
   });
 });
+
