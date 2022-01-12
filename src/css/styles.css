@@ -2,13 +2,30 @@
   display: none;
 }
 
-#main-container {
-  max-width: 900px;
-  padding: auto, 0;
+#splash {
+  margin-top:12%;
+}
+
+#loon-header {
+  font-family: 'Monoton', cursive;
+  color: white;
+}
+
+#hr-header {
+  border-top: 2px solid white;
+  margin-top: -1%;
+  margin-inline: 8%;
+}
+
+#crpto-blurb {
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  margin-top: 4%;
+  margin-inline: 9%;
+  text-align: left;
 }
 
 body {
-  margin-top: 15%;
   background-color: rgb(88, 30, 224) ;
 }
 
@@ -24,17 +41,20 @@ h1 {
   color: white;
 }
 
-#crypto-display {
-  background-color: rgb(202, 225, 235);
+#display-container {
+  background-color: rgb(235, 240, 241);
+  font-family: 'Roboto', sans-serif;
   border-radius: 10px;
-  padding: 15px 0px;
-  margin-top: 15px;
+  padding: 65px 45px;
+  margin-top: 20px;
+  min-width: 550px;
 }
 
 #trade-display {
   font-family: 'Roboto', sans-serif;
-  background-color: rgb(88, 30, 224) ;
   color: white;
+  padding: 15px 45px;
+  min-width: 550px;
 }
 
 .row {
@@ -54,10 +74,20 @@ h1 {
   padding-bottom: 5px;
 }
 
-#drop1, #drop2 {
-  margin: 15%;
+#exchange-btn {
+  padding: 2% 4%;
+}
+
+.drop, .exchange-input {
+  margin: 5% 8%;
 }
 
 #trade-btn {
-  margin-top: 5%;
+  margin-top: 3%;
+  margin-inline: 8%;
+}
+
+#back {
+  margin-top: 3%;
+  margin-inline: 2%;
 }

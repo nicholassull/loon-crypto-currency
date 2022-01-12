@@ -7,10 +7,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Loon Currency Exchange</title>
 </head>
 <body>
-  <div class="container" id="main-container">
+  <div class="d-flex justify-content-center" id="main-container">
     <div id="splash">
       <div class="d-flex justify-content-center">
         <h1 style="font-size:20vw">Loon</h1>
@@ -20,7 +20,14 @@
       </div>
     </div>
     <div id="crypto-display">
-      <div class="container">
+      <div class="row justify-content-center" id="loon-header">
+        <h2 style="font-size:10vw">Loon</h2>
+      </div>
+      <hr id="hr-header">
+      <div class="row" id="crpto-blurb">
+        <p>On offer: Four hand-picked, obscure coins to make your next fortune. Study carefully, then make a trade when you're ready. Remember! You can trade on Loon without fees. Loon is the only commision free, fee free trading platform, and for a good reason! We'll be totally broke by Q3 2022, so take advantage while you can!</p>
+      </div>
+      <div class="container" id="display-container">
         <div class="row" id="head-row">
           <div class="header col-2">Currency</div>
           <div class="header col-2">Price</div>
@@ -66,21 +73,25 @@
       </div>
     </div>
     <div id="trade-display">
+      <div class="row justify-content-center" id="loon-header">
+        <h2 style="font-size:10vw">Loon</h2>
+      </div>
+      <hr id="hr-header">
       <div class="row">
         <div class="d-flex justify-content-center">
-          <h3>Choose which currencies you would like to trade. Loon offers zero fee trading!</h3>
+          <p>Choose which currencies you would like to trade. Loon offers zero fee trading!</p>
         </div>
       </div>
       <div class="row">
-        <div class="col-6">
-          <select class="form-select" aria-label="Default select example">
+        <div class="col">
+          <select id="select1" class="form-select drop" aria-label="Default select example" >
             <option selected>Select Currency</option>
             <option value="1">Bitcoin</option>
             <option value="2">Ethereum</option>
             <option value="3">Dogecoin</option>
             <option value="4">Algorand</option>
           </select>
-          <select class="form-select" aria-label="Default select example">
+          <select id="select2" class="form-select drop" aria-label="Default select example">
             <option selected>Select Currency</option>
             <option value="1">Bitcoin</option>
             <option value="2">Ethereum</option>
@@ -88,7 +99,24 @@
             <option value="4">Algorand</option>
           </select>
         </div>
-        <button id="back">Go back</button>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div id="exchange-input-container">
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <button id="exchange-btn" class="btn btn-success" type="button">Exchange</button>
+              </div>
+              <input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon1">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="exchange-results">
+
+      </div>
+      <div class="row">
+        <button class="btn btn-secondary" type="button" id="back">Back</button>
       </div>
     </div>
     <div id="showError">

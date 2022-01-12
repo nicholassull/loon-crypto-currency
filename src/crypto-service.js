@@ -15,4 +15,8 @@ export default class CryptoService {
       request.send()
     });
   }
+
+  static exchange(rate1, rate2, amount ) {
+    return (rate1 * amount) / rate2;
+  }
 }
