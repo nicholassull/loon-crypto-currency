@@ -1,6 +1,6 @@
 # _Loon Cryptocurrency_
 
-#### By _**Nick Sullivan and Erin McCormick**_
+#### By _**Nick Sullivan and Erin McCully**_
 
 #### _A webpage that provides information on 4 different cryptocurrencies._
 
@@ -30,7 +30,7 @@ _This webpage uses an API call to CoinGecko to show the user information on 4 di
 
 ## License
 
-Copyright (c) _01/12/2021_ _by Nick Sullivan and Erin McCormick_
+Copyright (c) _01/12/2021_ _by Nick Sullivan and Erin McCully_
 
 
 _Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:_
